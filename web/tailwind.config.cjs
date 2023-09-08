@@ -24,7 +24,7 @@ module.exports = {
         'immich-dark-warning': '#f57c00',
       },
       fontFamily: {
-        'immich-title': ['Snowburst One', 'cursive'],
+        'immich-title': ['Berkeley Mono', 'monospace'],
       },
       spacing: {
         18: '4.5rem',

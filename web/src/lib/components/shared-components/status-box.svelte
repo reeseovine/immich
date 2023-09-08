@@ -49,12 +49,12 @@
   };
 </script>
 
-<div class="dark:text-immich-dark-fg">
-  <div class="storage-status grid grid-cols-[64px_auto]">
-    <div class="pb-[2.15rem] pl-5 pr-6 text-immich-primary dark:text-immich-dark-primary group-hover:sm:pb-0 md:pb-0">
+<div class="mt-6 dark:text-immich-dark-fg">
+  <div class="storage-status m-5 flex place-items-start justify-between gap-4">
+    <div class="shrink-0 text-immich-primary dark:text-immich-dark-primary">
       <Cloud size={'24'} />
     </div>
-    <div class="hidden group-hover:sm:block md:block">
+    <div class="grow hidden group-hover:sm:block md:block">
       <p class="text-sm font-medium text-immich-primary dark:text-immich-dark-primary">Storage</p>
       {#if serverInfo}
         <div class="my-2 h-[7px] w-full rounded-full bg-gray-200 dark:bg-gray-700">
@@ -75,14 +75,11 @@
       {/if}
     </div>
   </div>
-  <div>
-    <hr class="my-4 ml-5 dark:border-immich-dark-gray" />
-  </div>
-  <div class="server-status grid grid-cols-[64px_auto]">
-    <div class="pb-11 pl-5 pr-6 text-immich-primary dark:text-immich-dark-primary group-hover:sm:pb-0 md:pb-0">
+  <div class="server-status m-5 flex place-items-start justify-between gap-4">
+    <div class="shrink-0 text-immich-primary dark:text-immich-dark-primary">
       <Dns size={'24'} />
     </div>
-    <div class="hidden text-xs group-hover:sm:block md:block">
+    <div class="grow hidden text-xs group-hover:sm:block md:block">
       <p class="text-sm font-medium text-immich-primary dark:text-immich-dark-primary">Server</p>
 
       <div class="mt-2 flex justify-between justify-items-center">
