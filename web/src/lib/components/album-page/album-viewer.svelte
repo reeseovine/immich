@@ -19,7 +19,6 @@
   import AssetSelectControlBar from '../photos-page/asset-select-control-bar.svelte';
   import ControlAppBar from '../shared-components/control-app-bar.svelte';
   import ImmichLogo from '../shared-components/immich-logo.svelte';
-  import ThemeButton from '../shared-components/theme-button.svelte';
 
   export let sharedLink: SharedLinkResponseDto;
 
@@ -126,7 +125,6 @@
           <CircleIconButton title="Download" on:click={() => downloadAlbum()} logo={FolderDownloadOutline} />
         {/if}
 
-        <ThemeButton />
       </svelte:fragment>
     </ControlAppBar>
   {/if}

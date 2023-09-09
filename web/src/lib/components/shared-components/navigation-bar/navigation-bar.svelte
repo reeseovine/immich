@@ -6,7 +6,6 @@
   import { fade, fly } from 'svelte/transition';
   import TrayArrowUp from 'svelte-material-icons/TrayArrowUp.svelte';
   import { api, UserResponseDto } from '@api';
-  import ThemeButton from '../theme-button.svelte';
   import { AppRoute } from '../../../constants';
   import AccountInfoPanel from './account-info-panel.svelte';
   import ImmichLogo from '../immich-logo.svelte';
@@ -61,8 +60,6 @@
             </IconButton>
           </a>
         {/if}
-
-        <ThemeButton />
 
         {#if !$page.url.pathname.includes('/admin') && showUploadButton}
           <div in:fly={{ x: 50, duration: 250 }}>
